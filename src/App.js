@@ -10,7 +10,10 @@ export default function App() {
         <footer>
           {" "}
           This project was created by Diana Menendez and is
-          <a href="https://github.com/itsdianaa21" target="_blank">
+          <a
+            href="https://github.com/itsdianaa21/react-weather-app"
+            target="_blank"
+          >
             {" "}
             open-sourced{" "}
           </a>
