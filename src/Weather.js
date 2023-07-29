@@ -6,7 +6,6 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -19,7 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
     });
   }
-    
+
   function search() {
     const apiKey = "3f6be1c407b0d9d1933561808db358ba";
     let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -58,7 +57,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo info={weatherData} />
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
