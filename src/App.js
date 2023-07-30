@@ -8,16 +8,22 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          {" "}
-          This project was created by Diana Menendez and is
-          <button 
-            href="https://github.com/itsdianaa21/react-weather-app"
+          This project was coded by Diana Menendez and is{" "}
+          <a
+            href="https://github.com/itsdianaa21/react-weather-app.git"
             target="_blank"
+            rel="noreferrer"
           >
-            {" "}
-            open-sourced{" "}
-          </button>
-          on Github.
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://master--enchanting-puppy-78162b.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
         </footer>
       </div>
     </div>
